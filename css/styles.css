@@ -170,36 +170,41 @@ img {
   text-align: center;
 }
 .service-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
 
+  text-align: center;
   text-transform: uppercase;
   color: var(--main-title-color);
+
+  max-width: 696px;
+  margin: 0 auto 50px;
+  margin-bottom: 30px;
 }
 .service-btn {
-  display: inline-block;
-  padding: 10px 32px;
-
-  min-width: 200px;
-  height: 50px;
-  border-radius: 4px;
-
-  text-align: center;
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  cursor: pointer;
-  border: none;
+  text-align: center;
+  padding: 10px 32px;
+
   color: var(--first-button-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  min-width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  cursor: pointer;
 }
 
 /*---------------Наши сильные стороны----------------*/
@@ -351,6 +356,21 @@ img {
 
 /*-------------Портфолио-------------*/
 /*-------------Кнопки на наши работы-------------*/
+
+.what-we-do {
+  border-top: 1px solid #ececec;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--main-background-color);
+}
+.what-we-do-list {
+  display: flex;
+  justify-content: center;
+}
+.what-we-do-item:not(:last-child) {
+  margin-right: 8px;
+}
 .what-we-do-btn {
   font-family: inherit;
   font-weight: 500;
@@ -361,19 +381,53 @@ img {
   cursor: pointer;
   background-color: #f5f4fa;
   border: none;
+  border-radius: 4px;
+  text-align: center;
+  min-height: 38px;
+
+  margin-left: 8px;
+  margin-bottom: 34px;
+
+  padding: 6px 22px 6px 22px;
 }
 .what-we-do-btn:focus,
 .what-we-do-btn:hover {
   color: var(--first-button-color);
   background-color: var(--accent-color);
 }
+
 /*------------------Работы----------------------*/
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+}
+.examples-item {
+  width: 370px;
+  min-height: 404px;
+
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.examples-item:nth-child(3n) {
+  margin-right: 0;
+}
+.examples-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
 .examples-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-title-color);
+
+  margin: 20px 24px 4px 24px;
+  min-height: 322px;
+  min-height: 36px;
 }
 
 .examples-text {
@@ -381,4 +435,6 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--firt-text-color);
+
+  margin: 0px 24px 20px 24px;
 }
