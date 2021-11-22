@@ -434,7 +434,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--second-title-color);
 
-  min-height: 322px;
+  min-width: 322px;
   min-height: 36px;
   margin-bottom: 4px;
 }
