@@ -119,6 +119,14 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-header-text-color);
+
+  display: flex;
+  align-items: center;
+}
+.header-mail-icon {
+  fill: currentColor;
+  order: -1;
+  margin-right: 10px;
 }
 
 .header-tel {
@@ -127,6 +135,14 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-header-text-color);
+
+  display: flex;
+  align-items: center;
+}
+.header-tel-icon {
+  fill: currentColor;
+  order: -1;
+  margin-right: 10px;
 }
 
 .header-link:hover,
@@ -166,8 +182,23 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: var(--firs-background-color);
   text-align: center;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/service.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .service-title {
   font-weight: 900;
@@ -223,6 +254,18 @@ img {
 }
 .strong-sides-item:last-child {
   margin-right: 0px;
+}
+.strong-sides-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+
+  background-color: var(--second-background-color);
 }
 .strong-sides-title {
   font-weight: 700;
@@ -317,6 +360,26 @@ img {
 
   text-align: center;
   color: var(--firt-text-color);
+}
+.team-social-links {
+  display: flex;
+}
+/*---------------Постоянные клиенты-------*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--main-background-color);
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+
+  margin-bottom: 50px;
 }
 
 /*---------------Подвал----------------*/
