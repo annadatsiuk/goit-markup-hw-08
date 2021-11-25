@@ -306,7 +306,6 @@ img {
 .works-item:not(:last-child) {
   margin-right: 30px;
 }
-
 /*---------------Наша команда----------------*/
 .team {
   background-color: var(--second-background-color);
