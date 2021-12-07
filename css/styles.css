@@ -588,7 +588,6 @@ img {
   margin-left: 93px;
 }
 .form-subscribe {
-  position: relative;
   display: flex;
 }
 .subscribe-title {
@@ -607,7 +606,6 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-family: inherit;
-  font-style: regular;
   font-size: 16px;
   line-height: 1.25;
   width: 358px;
@@ -640,7 +638,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-icon {
   width: 24px;
