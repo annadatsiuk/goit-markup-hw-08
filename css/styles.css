@@ -721,7 +721,18 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+.modal-input:hover + .form-icon,
+.modal-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+
 .form-icon {
   position: absolute;
   left: 10px;
@@ -731,16 +742,18 @@ img {
   width: 18px;
   height: 18px;
   fill: #212121;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text {
   width: 100%;
   height: 120px;
-  margin-top: 10px;
   padding: 12px 16px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text::placeholder {
   font-weight: 400;
@@ -750,6 +763,83 @@ img {
 
   color: rgba(117, 117, 117, 0.5);
 }
+.modal-text:hover,
+.modal-text:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-check-text {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+
+  align-items: center;
+}
+.modal-check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  margin-right: 8.38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-check {
+  fill: #ffffff;
+}
+.modal-check:checked + .modal-check-text span {
+  background-color: var(--accent-color);
+  border: none;
+}
+.policy-text {
+  color: rgba(33, 150, 243, 1);
+  text-decoration: underline;
+  margin-left: 4px;
+}
+
+.modal-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+
+  background-color: var(--accent-color);
+  color: var(--first-button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  cursor: pointer;
+}
+
+/* ----------Иконка в чекбоксе через before-------- */
+/* .modal-check-text::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  margin-right: 8.38px;
+  display: block;
+}
+
+.modal-check:checked + .modal-check-text::before {
+  /* background-color: var(--accent-color); */
+/* background-image: url(../images/icon-check.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+} */
 
 .modal-close {
   position: absolute;
@@ -766,6 +856,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon:focus,
+.close-icon:hover {
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 
 .is-hidden {

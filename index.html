@@ -436,6 +436,19 @@
                     <label class="modal-label" for="user-text">Комментарий</label>
                     <textarea class="modal-text" name="user-text" id="user-text" cols="30" rows="10" placeholder="Введите текст"></textarea>
                 </div>
+                <div class="modal-field">
+                    <input
+                        class="modal-check visually-hidden" 
+                        type="checkbox" 
+                        name="policy" 
+                        id="modal-check"/>
+                    <label class="modal-check-text" for="modal-check"><span><svg class="icon-check" width="16" height="16">
+                        <use href="./images/icons.svg#icon-checked"></use>
+                    </svg></span>Соглашаюсь с рассылкой и принимаю <a class="policy-text" href="#">Условия договора</a></label>
+                </div>
+
+                <button class="modal-btn" type="submit">Отправить</button>
+
                 
             </form>
             <button type="button" class="modal-close" data-modal-close>
