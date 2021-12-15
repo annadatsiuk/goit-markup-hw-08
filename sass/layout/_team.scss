@@ -28,9 +28,9 @@
 .team-item {
   margin-right: 30px;
   background-color: var(--main-background-color);
-}
-.team-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .team-list-title {
   font-weight: 500;
@@ -70,14 +70,16 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--first-button-color);
+    border-radius: 50%;
+    cursor: pointer;
+  }
 }
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: var(--accent-color);
-  color: var(--first-button-color);
-  border-radius: 50%;
-  cursor: pointer;
-}
+
 .team-social-link-item:not(:last-child) {
   margin-right: 10px;
 }
