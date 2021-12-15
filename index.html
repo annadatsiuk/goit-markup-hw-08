@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -285,9 +286,7 @@
                             </ul>
                         </div>
                     </li>
-            </div>
-            </ul>
-
+                </ul>
             </div>
         </section>
         <!-------------------------------Постоянные клиенты------------------------------->
@@ -345,17 +344,19 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-adress">
-                <a class="footer-logo link" href=“”><span class="logo-accent">Web</span>Studio</a>
+                <a class="footer-logo link" href=“#”><span class="logo-accent">Web</span>Studio</a>
                 <address class="address">
                     <ul class="address-list list">
                         <li class="address-item">
                             <a class="address-map-link link" href="https://goo.gl/maps/yHCGpA8CDPhuFS926"
                                 target="_blank" rel="noopener noreferrer">г.Киев, пр-т Леси Украинки, 26</a>
                         </li>
-                        <li class="address-item"><a class="address-link link"
-                                href="mailto:info@example.com">info@example.com</a></li>
-                        <li class="address-item"><a class="address-link link" href="tel:+380991111111">+38 099 111 11
-                                11</a></li>
+                        <li class="address-item">
+                            <a class="address-link link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="address-item">
+                            <a class="address-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
                     </ul>
                 </address>
             </div>
@@ -392,10 +393,16 @@
                     </li>
                 </ul>
             </div>
+
             <div class="subscribe">
                 <p class="subscribe-title">Подпишитесь на рассылку</p>
-                <form class="form-subscribe">
-                    <input type="email" name="email" id="user-email" placeholder="E-mail" class="subscribe-input">
+                    <input 
+                    class="subscribe-input"
+                    type="email" 
+                    name="email" 
+                    id="user-email" 
+                    placeholder="E-mail" 
+                    />
                     <button type="submit" class="subscribe-button">Подписаться
                         <svg class="subscribe-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
