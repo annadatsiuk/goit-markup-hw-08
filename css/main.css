@@ -506,6 +506,7 @@ img {
 }
 
 .strong-sides__text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -549,8 +550,8 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--main-title-color);
   background-color: rgba(47, 48, 58, 0.8);
@@ -605,6 +606,7 @@ img {
 }
 
 .team-description__text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
@@ -657,8 +659,8 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--second-title-color);
   margin-bottom: 50px;
 }
@@ -737,7 +739,7 @@ img {
 }
 
 .address__map-link {
-  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -745,7 +747,7 @@ img {
 }
 
 .address__link {
-  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -842,10 +844,10 @@ img {
 .subscribe-form__button {
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   text-transform: none;
@@ -954,6 +956,7 @@ img {
   transform: translateY(100%);
   transition: transform 250ms linear;
   padding: 63px 24px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -977,6 +980,7 @@ img {
 }
 
 .examples__text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
