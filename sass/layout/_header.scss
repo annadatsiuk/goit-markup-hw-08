@@ -3,24 +3,27 @@
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
-.header-navigation {
+.header__navigation {
   display: flex;
   text-align: center;
   align-items: center;
 }
-.header-list {
+.header__list {
   display: flex;
 }
-.header-link {
+.header__item {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.header__link {
   position: relative;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(500, 14px, 1.14, 0.02em);
   color: var(--first-header-text-color);
 
   padding-bottom: 32px;
@@ -45,30 +48,21 @@
     border-radius: 2px;
   }
 }
-.header-connect {
+.header__contacts {
   margin-left: auto;
 }
-.header-contacts {
+.header-contacts__list {
   display: flex;
 }
-.header-item {
-  margin-right: 50px;
-  &:last-child {
-    margin-right: 0;
-  }
-}
 
-.header-contacts-item {
+.header-contacts__item {
   margin-right: 50px;
   &:last-child {
     margin-right: 0;
   }
 }
-.header-mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.header-contacts__mail {
+  @include font(500, 14px, 1.14, 0.02em);
   color: var(--second-header-text-color);
 
   display: flex;
@@ -80,17 +74,14 @@
     color: var(--accent-color);
   }
 }
-.header-mail-icon {
+.header-contacts-mail__icon {
   fill: currentColor;
   order: -1;
   margin-right: 10px;
 }
 
-.header-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.header-contacts__tel {
+  @include font(500, 14px, 1.14, 0.02em);
   color: var(--second-header-text-color);
 
   display: flex;
@@ -102,7 +93,7 @@
     color: var(--accent-color);
   }
 }
-.header-tel-icon {
+.header-contacts-tel__icon {
   fill: currentColor;
   order: -1;
   margin-right: 10px;
@@ -110,18 +101,12 @@
 
 .logo {
   font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(700, 26px, 1.19, 0.03em);
   color: #000000;
   margin-right: 93px;
 }
 .logo-accent {
   font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(700, 26px, 1.19, 0.03em);
   color: var(--accent-color);
 }

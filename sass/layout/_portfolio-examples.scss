@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-.examples-item {
+.examples__item {
   width: 370px;
   min-height: 404px;
 
@@ -22,15 +22,15 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  &:hover .examples-text-top {
+  &:hover .examples__text-top {
     transform: translateY(0);
   }
 }
-.examples-item-wrap {
+.examples-item__wrap {
   position: relative;
   overflow: hidden;
 }
-.examples-text-top {
+.examples__text-top {
   position: absolute;
   top: 0;
   left: 0;
@@ -43,21 +43,16 @@
 
   padding: 63px 24px;
 
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include font(400, 18px, 1.56, 0.03em);
 
   color: var(--main-title-color);
   background-color: rgba(33, 150, 243, 0.9);
 }
-.examples-description {
+.examples__description {
   padding: 20px 24px 20px 24px;
 }
-.examples-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+.examples__title {
+  @include font(700, 18px, 2, 0.06em);
   color: var(--second-title-color);
 
   min-width: 322px;
@@ -65,9 +60,7 @@
   margin-bottom: 4px;
 }
 
-.examples-text {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
+.examples__text {
+  @include font(400, 16px, 1.87, 0.03em);
   color: var(--firt-text-color);
 }

@@ -5,24 +5,21 @@
 
   background-color: var(--main-background-color);
 }
-.what-we-do-list {
+.what-we-do__list {
   display: flex;
   justify-content: center;
 }
-.what-we-do-decoration {
+.what-we-do__thumb {
   margin-bottom: 50px;
 }
 
-.what-we-do-item:not(:last-child) {
+.what-we-do__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.what-we-do-btn {
+.what-we-do__btn {
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+  @include font(500, 16px, 1.62, 0.03em);
   color: var(--second-button-color);
   cursor: pointer;
   background-color: #f5f4fa;

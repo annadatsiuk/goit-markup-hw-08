@@ -4,63 +4,51 @@
 
   background-color: var(--firs-background-color);
 }
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
-.footer-logo {
+.footer__logo {
   display: inline-block;
   margin: 0;
 
   font-family: Raleway;
   font-style: 400;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(700, 26px, 1.19, 00.03em);
   color: white;
 }
 .address {
   margin-top: 20px;
 }
-.address-item {
+.address__item {
   margin-bottom: 9px;
 }
-.address-map-link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.address__map-link {
+  @include font(400, 14px, 1.71, 0.03em);
   color: var(--main-title-color);
 }
-.address-link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.address__link {
+  @include font(400, 14px, 1.71, 0.03em);
   color: var(--second-text-color);
 }
-.footer-join {
+.footer__join {
   display: block;
   margin-left: 70px;
 }
-.footer-join-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+.footer-join__title {
+  @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-bottom: 20px;
 }
-.fotter-join-list {
+.fotter-join__list {
   display: flex;
   justify-content: center;
 }
-.footer-join-item:not(:last-child) {
+.footer-join__item:not(:last-child) {
   margin-right: 10px;
 }
-.footer-join-link {
+.footer-join__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +70,7 @@
   }
 }
 
-.footer-join-icon {
+.footer-join__icon {
   width: 20px;
   height: 20px;
   fill: var(--first-button-color);
@@ -93,17 +81,14 @@
 .form-subscribe {
   display: flex;
 }
-.subscribe-title {
+.subscribe__title {
   margin-bottom: 15px;
   display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--main-title-color);
 }
-.subscribe-input {
+.subscribe-form__input {
   margin: 0;
   padding: 15px 16px;
   border-radius: 4px;
@@ -123,15 +108,11 @@
     border-color: var(--accent-color);
   }
 }
-
-.subscribe-button {
+.subscribe-form__button {
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   text-align: center;
-  letter-spacing: 0.06em;
+  @include font(700, 16px, 1.87, 0.06em);
   background-color: var(--accent-color);
   text-transform: none;
   color: #ffffff;
@@ -141,7 +122,7 @@
   box-shadow: 0px 4px 4px rgb(0, 0, 0.15);
   padding: 10px 32px;
 }
-.subscribe-icon {
+.subscribe-form__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;

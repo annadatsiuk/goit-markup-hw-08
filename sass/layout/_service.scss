@@ -20,11 +20,8 @@
   background-size: cover;
   background-position: center;
 }
-.service-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+.service__title {
+  @include font(900, 44px, 1.36, 0.06em);
 
   text-align: center;
   text-transform: uppercase;
@@ -34,12 +31,9 @@
   margin: 0 auto 50px;
   margin-bottom: 30px;
 }
-.service-btn {
+.service__button {
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
+  @include font(700, 16px, 1.87, 0.06em);
   text-align: center;
   padding: 10px 32px;
 

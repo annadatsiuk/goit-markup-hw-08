@@ -2,26 +2,24 @@
   background-color: var(--main-background-color);
   padding-bottom: 94px;
 }
-.works-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
+.works__title {
+  @include font(700, 36px, 1.16, 0.03em);
   color: var(--second-title-color);
 
   text-align: center;
   margin-bottom: 50px;
 }
-.works-list {
+.works__list {
   display: flex;
 }
-.works-item:not(:last-child) {
+.works__item:not(:last-child) {
   margin-right: 30px;
 }
-.works-item-wrap {
+.works__wrap {
   position: relative;
 }
-.works-top-text {
+
+.works__top-text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -30,11 +28,9 @@
   height: 70px;
   width: 100%;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(700, 14px, 1.14, 0.03em);
+
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--main-title-color);
