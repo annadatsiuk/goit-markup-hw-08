@@ -35,10 +35,29 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .backdrop {
@@ -465,44 +484,79 @@ img {
 }
 
 .strong-sides {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--main-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
-.strong-sides__list {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .strong-sides {
+    padding-top: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .strong-sides__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .strong-sides__list {
+    display: flex;
+  }
 }
 
 .strong-sides__item {
-  min-width: 270px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.strong-sides__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.strong-sides__item:last-child {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .strong-sides__item {
+    flex-basis: calc(100% / 2 - 30px);
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.strong-sides__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background-color: var(--second-background-color);
+@media screen and (min-width: 1199px) {
+  .strong-sides__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .strong-sides__title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
   text-transform: uppercase;
-  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .strong-sides__title {
+    text-align: center;
+  }
+}
+
+.strong-sides__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: var(--second-background-color);
 }
 
 .strong-sides__text {
