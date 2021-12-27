@@ -36,8 +36,7 @@ img {
 
 .container {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -302,14 +301,32 @@ img {
 }
 
 .header {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: var(--main-background-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-right: 55px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header__navigation {
@@ -320,6 +337,12 @@ img {
 
 .header__list {
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .header__list {
+    display: none;
+  }
 }
 
 .header__item {
@@ -362,8 +385,27 @@ img {
   margin-left: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .header__contacts {
+    display: none;
+  }
+}
+
 .header-contacts__list {
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__list {
+    display: block;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__list {
+    display: flex;
+  }
 }
 
 .header-contacts__item {
@@ -387,6 +429,18 @@ img {
 
 .header-contacts__mail:hover, .header-contacts__mail:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__mail {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__mail {
+    margin-bottom: 0;
+  }
 }
 
 .header-contacts-mail__icon {
@@ -433,6 +487,107 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+.open-menu-btn {
+  margin-left: auto;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .open-menu-btn {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  background-color: var(--main-background-color);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 5;
+  padding-top: 10px;
+  padding-bottom: 48px;
+}
+
+.mob-menu .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.mob-menu__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+}
+
+.mob-close-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: 15px;
+  margin-bottom: 14px;
+  margin-top: 10px;
+  border: none;
+  background-color: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-close-btn:hover, .mob-close-btn:focus {
+  color: var(--accent-color);
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts__tel {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 24px;
+}
+
+.mobile-contacts__mail {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--second-header-text-color);
+}
+
+.mob-social__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile__contacts {
+  margin-bottom: 64px;
+}
+
+.mob-social__list {
+  display: flex;
+}
+
+.mob-social__item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .service {
@@ -620,6 +775,12 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .works {
+    display: none;
+  }
+}
+
 .works__title {
   font-weight: 700;
   font-size: 36px;
@@ -663,6 +824,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   padding-right: 15px;
+  padding-left: 15px;
   margin: 0px auto;
   background-color: var(--second-background-color);
 }
@@ -710,6 +872,18 @@ img {
 
 .team-list__item {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team__description {

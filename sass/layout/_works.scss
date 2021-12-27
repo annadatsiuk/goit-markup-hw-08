@@ -1,4 +1,7 @@
 .works {
+  @media screen and(max-width:1199px) {
+    display: none;
+  }
   background-color: var(--main-background-color);
   padding-bottom: 94px;
 }
