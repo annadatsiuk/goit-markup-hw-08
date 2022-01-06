@@ -31,9 +31,14 @@
     min-height: 404px;
     &:last-child {
       margin-left: 30px;
+      margin-bottom: 30px;
+    }
+    &:nth-child(3) {
+      margin-left: 30px;
     }
     &:nth-child(4) {
       margin-right: 30px;
+      margin-left: 0;
     }
   }
 
