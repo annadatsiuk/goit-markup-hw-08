@@ -308,7 +308,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .header {
-    max-width: 768px;
     padding-bottom: 21px;
     padding-top: 21px;
   }
@@ -382,6 +381,14 @@ img {
 @media screen and (max-width: 767px) {
   .header__contacts {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
   }
 }
 

@@ -7,7 +7,6 @@
   background-color: var(--main-background-color);
 
   @media screen and(min-width:768px) {
-    max-width: 768px;
     padding-bottom: 21px;
     padding-top: 21px;
   }
@@ -69,6 +68,11 @@
 .header__contacts {
   @media screen and(max-width:767px) {
     display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
   }
 }
 .header-contacts__list {
