@@ -4,6 +4,11 @@
   justify-content: center;
   background-color: var(--main-background-color);
 
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
+
   @media screen and (min-width: 1200px) {
     padding: 94px 0px;
   }
@@ -29,6 +34,9 @@
     flex-basis: calc(100% / 2 - 30px);
     display: flex;
     flex-wrap: wrap;
+    &:nth-child(2) {
+      margin-right: 0;
+    }
   }
 
   @media screen and (min-width: 1200px) {
