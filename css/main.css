@@ -35,7 +35,6 @@ img {
 }
 
 .container {
-  width: 100%;
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -301,8 +300,6 @@ img {
 }
 
 .header {
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: var(--main-background-color);
@@ -310,7 +307,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-bottom: 20px;
+    padding-bottom: 21px;
     padding-top: 21px;
   }
 }
@@ -476,7 +473,18 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
-  margin-right: 93px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo-accent {
