@@ -766,6 +766,9 @@ img {
     flex-basis: calc(100% / 4 - 30px);
     margin-bottom: 0;
   }
+  .strong-sides__item:nth-child(2) {
+    margin-right: 30px;
+  }
 }
 
 .strong-sides__title {
