@@ -532,6 +532,12 @@ img {
   height: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
 .mob-menu__link {
   font-style: normal;
   font-weight: 500;

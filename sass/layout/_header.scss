@@ -178,6 +178,9 @@
     justify-content: space-between;
     height: 100%;
   }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .mob-menu__link {
   font-style: normal;
