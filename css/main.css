@@ -36,7 +36,7 @@ img {
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -310,9 +310,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 21px;
     padding-bottom: 20px;
-    padding-left: 65px;
+    padding-top: 21px;
   }
 }
 
@@ -684,8 +683,7 @@ img {
 }
 
 .strong-sides {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0px;
   align-items: center;
   justify-content: center;
   background-color: var(--main-background-color);
@@ -693,8 +691,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .strong-sides {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0px;
   }
 }
 
@@ -990,7 +987,7 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--second-title-color);
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 1200px) {
