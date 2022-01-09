@@ -34,9 +34,6 @@
     flex-basis: calc(100% / 2 - 30px);
     display: flex;
     flex-wrap: wrap;
-    &:nth-child(2) {
-      margin-right: 0;
-    }
   }
 
   @media screen and (min-width: 1200px) {
