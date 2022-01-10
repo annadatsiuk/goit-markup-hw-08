@@ -75,7 +75,7 @@
   @media screen and (min-width: 1200px) {
     align-items: center;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 200px;
   }
 }
 .header-contacts__list {
@@ -89,12 +89,14 @@
 }
 
 .header-contacts__item {
-  margin-right: 50px;
-  &:last-child {
-    margin-right: 0;
-  }
   @media screen and(min-width:768px) {
     margin-right: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 .header-contacts__mail {
